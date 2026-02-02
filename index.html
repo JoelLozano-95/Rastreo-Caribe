@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head>
+   <meta charset="UTF-8">
+   <title>Rastreo de paqueteria caribeña</title> 
+   
+   <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <h1 style="font-family: Arial, Helvetica, sans-serif;text-align: center;"> Rastreo de Paquetería del Caribe</h1>
+    <h2 style="font-family: Arial, Helvetica, sans-serif;text-align: center;"> By: Jose Joel Lozano Liborio</h2>
+    
+    <form id="Formulario para rastreo">
+        <label>Número de guía:</label><br>
+        <input type="text" id="guia" placeholder="Ejemplo: ABC-123"><br>
+
+        <label>Peso (kg):</label><br>
+        <input type="number" id="peso"><br>
+
+        <label>Fecha de envío:</label><br>
+        <input type="date" id="fecha"><br>
+
+        <label>PIN de verificación (4 dígitos):</label><br>
+        <input type="password" id="pin"><br>
+
+        <label>Email de notificación:</label><br>
+        <input type="email" id="correo"><br>
+
+        <label for="prioridad"> Prioridad de envío:</label><br>
+        <select id="prioridad">
+            <option value="">Selecciona una opción</option>
+            <option value="1">1 Baja (Económica)</option>
+            <option value="2">2 Media (Estándar)</option>
+            <option value="3">3 Alta (Turbo)</option>
+        </select>
+
+        <button type="button" onclick="validarSeguimiento()">Consultar Estado</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
